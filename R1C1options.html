@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Change to R1C1 reference style</title>
+    <style>
+      @media (min-width: 700px) {
+        .grid {
+            background-color: lightyellow;
+            display: grid;
+            padding: 20px;
+            grid-column-gap: 20px;
+            grid-row-gap: 10px;
+            grid-template-columns: auto auto;
+        }
+        .grid-item {
+            background-color: white;
+            font-size: 20px;
+            padding: 10px;
+            text-align: left;
+        }
+      }
+
+      @media (max-width: 699px) {
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: lightyellow;
+        }
+
+        .grid-item {
+            background-color: lightyellow;
+            font-size: 20px;
+            margin: 5px;
+            padding: 5px;
+            width: 400px;
+        }
+      }
+
+        .button {
+          color:red;font-weight:bold
+        }
+    </style>
+  </head>
+  <body>
+    <h2>Changing to R1C1 reference style</h2>
+    <div class="grid">
+        <div class="grid-item">1. Click on <span class="button">File</span><img src="D:\CS50\project0\Images\R1C1_options0.jpg" width="100%"></div>
+        <div class="grid-item">2. Click on <span class="button">Options</span><img src="D:\CS50\project0\Images\R1C1_options1.jpg" width="100%"></div>
+        <div class="grid-item">3. Click on <span class="button">Formulas</span><img src="D:\CS50\project0\Images\R1C1_options2.jpg" width="100%"></div>
+        <div class="grid-item">4. Put a checkmark<img src="D:\CS50\project0\Images\R1C1_options3.jpg" width="100%"></div>
+
+    </div>
+  </body>
+</html>
