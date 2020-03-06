@@ -3,21 +3,58 @@
   <head>
     <title>Excel Course Lesson1</title>
   </head>
+  <style media="screen">
+    html {background-color:lightyellow
+
+    }
+    h1, h2, h3 {color:darkgreen; text-align:center
+
+    }
+    h2:hover, h3:hover {
+      color:lightgreen
+    }
+    ol > li:hover {
+      color:lightgreen
+    }
+    .text {color:darkblue; text-align:justify
+
+    }
+    .section {font-weight:bold
+
+    }
+    table {text-align:center; border:3px
+
+    }
+    table td {
+      background-color:yellow
+    }
+    table th {
+      background-color:lightgreen
+    }
+    p::selection {
+      color:green; background-color:yellow
+    }
+    #ftable {font-size:20px; font-weight:bold; color:darkgreen}
+  </style>
   <body>
     <h1>Lesson 1. Reference types</h1>
-    <p>There are three types of references in Excel. And then there is R1C1 reference style
+    <p class="text">There are three types of references in Excel. And then there is R1C1 reference style
       (I will be calling it just 'R1C1' from now on) vs 'usual one'. We will take a look on R1C1 a little bit later.
       So here are reference types:
     </p>
-    <ol>
-        <li>Relative reference</li>
-        <li>Absolute reference</li>
-        <li>Mixed reference</li>
+    <ol id="ftable">
+        <li><a href="#relative">Relative</a></li>
+        <li>Absolute</li>
+        <li>Mixed</li>
+        <ul>
+          <li>Constant Column</li>
+          <li>Constant Row</li>
+        </ul>
     </ol>
-    <h2>Relative reference</h2>
+    <h2 id="relative">Relative reference</h2>
     <h3>R1C1 reference style</h3>
     <p class="text">
-      In order to understand <span class="big section">Relative reference</span>
+      In order to understand <span class="section">Relative reference</span>
       we first need to look into R1C1 reference style .
       But to grasp what is R1C1, we need to go through some basics.
       So every cell in Excel Sheet has its own unique address, which consists
