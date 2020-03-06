@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Absolute reference</title>
+  </head>
+  <style media="screen">
+    html {background-color:lightyellow
+
+    }
+    h1, h2, h3 {color:darkgreen; text-align:center
+
+    }
+    h2:hover, h3:hover {
+      color:lightgreen
+    }
+    ol > li:hover {
+      color:lightgreen
+    }
+    .text {color:darkblue; text-align:justify
+
+    }
+    .section {font-weight:bold
+
+    }
+    table {text-align:center; border:3px
+
+    }
+    table td {
+      background-color:yellow
+    }
+    table th {
+      background-color:lightgreen
+    }
+    p::selection {
+      color:green; background-color:yellow
+    }
+    #ftable {font-size:20px; font-weight:bold; color:darkgreen}
+  </style>
+  <body>
+    <h2>Absolute reference</h2>
+    <p class="text"> Now let's say we have a different task. We need to convert
+      sums we have just calculated to some other currencies. The first currency
+      rate is equal to 380.
+    </p>
+    <img src="D:\CS50\project0\Images\Divide1.bmp" width="70%">
+    <p class="text"> Here I divide the cell E3 by the cell F2. But wait a minute,
+      as I am using a relative reference here, I am not dividing it by the cell F3,
+      I am dividing it by a cell, which is one row above from the curent cell.
+      So if I copy this formula down I will get these formulas in the cells below the current:
+    </p>
+    <table>
+      <tr>
+        <th>sum</th>
+        <th>380</th>
+      </tr>
+      <tr>
+        <td>37500</td>
+        <td>=E3/F2</td>
+      </tr>
+      <tr>
+        <td>1500</td>
+        <td>=E4/F3</td>
+      </tr>
+      <tr>
+        <td>1600</td>
+        <td>=E5/F4</td>
+      </tr>
+      <tr>
+        <td>...</td>
+        <td>...</td>
+      </tr>
+    </table>
+    <p class="text">
+      So now I am dividing a sum value by the wrong values. I need to make the
+      reference to F2 cell <i>constant</i>. To do that you need to press F4 button.
+      And now you see dollar signs in the reference to F2 cell (i.e. $F$2):
+    </p>
+    <img src="D:\CS50\project0\Images\Divide2.bmp" width="70%">
+    <p class="text">
+      And if you copy this formula down you will see that different sum values
+      are divided only by the F2 cell:
+    </p>
+    <table>
+      <tr>
+        <th>sum</th>
+        <th>380</th>
+      </tr>
+      <tr>
+        <td>37500</td>
+        <td>=E3/$F$2</td>
+      </tr>
+      <tr>
+        <td>1500</td>
+        <td>=E4/$F$2</td>
+      </tr>
+      <tr>
+        <td>1600</td>
+        <td>=E5/$F$2</td>
+      </tr>
+      <tr>
+        <td>...</td>
+        <td>...</td>
+      </tr>
+    </table>
+    <p class="text"> So as you see these dollar signs in the reference only show
+    that your reference has changed to <span class="section">Absolute reference</span></p>
+  </body>
+</html>
