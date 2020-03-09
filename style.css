@@ -1,0 +1,31 @@
+html {background-color:lightyellow
+
+}
+h1, h2, h3 {color:darkgreen; text-align:center
+
+}
+h2:hover, h3:hover {
+  color:lightgreen
+}
+ol > li:hover {
+  color:lightgreen
+}
+.text {color:darkblue; text-align:justify
+
+}
+.section {font-weight:bold
+
+}
+table {text-align:center; border:3px
+
+}
+table td {
+  background-color:yellow
+}
+table th {
+  background-color:lightgreen
+}
+p::selection {
+  color:green; background-color:yellow
+}
+#ftable {font-size:20px; font-weight:bold; color:darkgreen}
