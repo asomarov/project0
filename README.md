@@ -12,11 +12,11 @@ Then there are two CSS files:
 I used also SASS file (style.scss), and it generated style.css.map file.
 All webpages have a link to a CSS file, which defines their style. The second webpage has its own CSS file (style_R1C1.css).
 Other webpages have another CSS file (style.css). These webpages use class selectors
-like "text", "section". I use one id to 'ftable' to have a unique style for the contents section.
+like "text", "section". I use one id 'ftable' to have a unique style for the contents section.
 When you hover over h2 and h3 headings the color of these headings will change to lightblue (this color is defined by a sass variable).
 In scss file I use two variables ($colorhover and $divbackcol). $divbackcol defines background color of a div.
 This div has a nesting with p and ol. There is also an inheritance feature for the class "text" and "section" from t.
-Tables have their own style. Selecting a text will result in another color of the text and of the selection. 
+Tables have their own style. Selecting a text will result in another color of the text and of the selection.
 The third webpage has a link to Bootstrap CSS file, as it uses one Bootstrap feature collapse (more on this below).
 
 The first 'index.html' has a contents section,
